@@ -16,6 +16,10 @@ app.get('/', function (req, res) {
   res.send('backend api is up')
 });
 
+app.get('/test', function (req, res) {
+  res.status(200).send('I turned myself into a pickle Morty!')
+})
+
 app.post('/signup', function (req, res) {
 
   var reg = {
